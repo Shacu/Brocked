@@ -1,0 +1,108 @@
+@font-face{
+	font-family: BasementGrotesque;
+	src: url(../font/BasementGrotesque-Black_v1.202.otf);
+}
+
+*{
+	font-size: 62.5%;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family:BasementGrotesque;
+	font-size: 1rem;
+}
+
+body{
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
+}
+
+/* abro colores */
+
+.text_color{
+	color:  white;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.bg_nav-black{
+	background-color: black;
+}
+
+.navbar{
+	color: #73553C;
+}
+
+.borde_aside-color{
+	border: solid 0.3rem #401616;
+}
+
+/* cierro colores */
+
+/* abro edicion de nav */
+
+.nav_img-size{
+	height: 7rem;
+}
+
+.button_color-nav{
+	background-color: #591616;
+	border-color: #73553C;
+}
+
+/* cierro edicion de nav */
+
+/* abro display flex */
+
+.flex_main{
+	flex-direction: row-reverse;
+}
+
+.flex_aside{
+	display: flex;
+    align-items: center;
+}
+
+.flex_aside-ul{
+	display: flex;
+	flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+/* cierro display flex */
+
+@media (min-width: 768px){
+	.grid_body-index{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
+		grid-template-areas: 
+		"logo carousel"
+		"texto carousel";
+	}
+
+	#nav{
+		grid-area: logo;
+		display: flex;
+		flex-direction: column-reverse;
+	    align-content: flex-end;
+	    justify-content: flex-start;
+	}
+
+	#texto{
+		grid-area: texto;
+		display: flex;
+		flex-direction: column;
+	    align-items: flex-end;
+	}
+
+	#carousel{
+		grid-area: carousel;
+		display: flex;
+		align-items: center;
+	    flex-direction: row;
+	}
+}
+
