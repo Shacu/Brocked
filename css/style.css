@@ -10,6 +10,7 @@
 	margin: 0;
 	font-family:BasementGrotesque;
 	font-size: 1rem;
+	list-style: none;
 }
 
 body{
@@ -17,6 +18,22 @@ body{
 	width: 100vw;
 	height: 100vh;
 }
+
+/* estilos links */
+
+.link{
+	text-decoration: none;
+}
+
+.link:link{
+	color: #591616;
+}
+
+.link:visited{
+	color: #401616;
+}
+
+/* estilos links */
 
 /* abro colores */
 
@@ -26,24 +43,12 @@ body{
 	text-align: center;
 }
 
+.h2_footer-color{
+	color: #401616;
+}
+
 .bg_nav-black{
 	background-color: black;
-}
-
-.navbar{
-	color: #73553C;
-}
-
-.borde_aside-color{
-	border: solid 0.3rem #401616;
-}
-
-/* cierro colores */
-
-/* abro edicion de nav */
-
-.nav_img-size{
-	height: 7rem;
 }
 
 .button_color-nav{
@@ -51,7 +56,34 @@ body{
 	border-color: #73553C;
 }
 
-/* cierro edicion de nav */
+.borde_aside-color{
+	border: solid #8C1F1F;
+	border-width: 0.4rem 0.4rem 0 0.4rem;
+}
+
+.border_footer{
+	border: solid #8C1F1F;
+	border-width: 0.4rem 0.2rem 0.4rem 0.2rem;
+}
+
+.footer_bg{
+	background-color: #73553C;
+}
+
+/* cierro colores */
+
+/* abro edicion de sizes */
+
+.nav_img-size{
+	height: 7rem;
+}
+
+.footer_svg-size{
+	height: 2rem;
+	width: 2rem;
+}
+
+/* cierro edicion de sizes */
 
 /* abro display flex */
 
@@ -62,6 +94,7 @@ body{
 .flex_aside{
 	display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .flex_aside-ul{
@@ -69,6 +102,24 @@ body{
 	flex-direction: column;
     justify-content: space-around;
     height: 100%;
+}
+
+.flex_footer-div{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.flex_footer-ul{
+	display: flex;
+	padding: 0 1rem;
+	flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.flex_footer-pagos{
+	display: flex;
+	flex-direction: column;
 }
 
 /* cierro display flex */
