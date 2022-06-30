@@ -83,6 +83,10 @@ body{
 	width: 2rem;
 }
 
+.main_img-size{
+	width: 100%;
+}
+
 /* cierro edicion de sizes */
 
 /* abro display flex */
