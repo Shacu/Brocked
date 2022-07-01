@@ -43,6 +43,14 @@ body{
 	text-align: center;
 }
 
+.main_h1-color{
+	color: #8C1F1F;
+}
+
+.mian_figure-color{
+	color: #591616;
+}
+
 .h2_footer-color{
 	color: #401616;
 }
@@ -87,7 +95,23 @@ body{
 	width: 100%;
 }
 
+.main_width{
+	width: 50vw;
+}
+
+.mian_h1-size{
+	font-size: 5rem;
+}
+
+.mian_text-size{
+	font-size: 3rem;
+}
+
 /* cierro edicion de sizes */
+
+.main_text-center{
+	text-align: center;
+}
 
 /* abro display flex */
 
