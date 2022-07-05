@@ -78,6 +78,10 @@ body{
 	background-color: #73553C;
 }
 
+.color_label-tienda{
+	color: #8C1F1F;
+}
+
 /* cierro colores */
 
 /* abro edicion de sizes */
@@ -167,6 +171,14 @@ body{
 	transition: 2s;
 }
 
+.efecto_figure-img:hover{
+	box-shadow: -1px 1px 22px 9px rgba(120,14,33,0.71);
+	-webkit-box-shadow: -1px 1px 22px 9px rgba(120,14,33,0.71);
+	-moz-box-shadow: -1px 1px 22px 9px rgba(120,14,33,0.71);
+	transform: scale(1.03 , 1.03);
+	transition: 1s;
+}
+
 /* cierro efectos */
 
 @media (min-width: 768px){
@@ -199,6 +211,18 @@ body{
 		display: flex;
 		align-items: center;
 	    flex-direction: row;
+	}
+
+	.nav_nosotros{
+		height: 13vh;
+	}
+
+	.main_nosotros{
+		height: 70vh;
+	}
+
+	.footer_nosotros{
+		height: 17vh;
 	}
 }
 
