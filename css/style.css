@@ -152,6 +152,23 @@ body{
 
 /* cierro display flex */
 
+/* abro efectos */
+
+.efecto_carousel:hover{
+	box-shadow: -1px 1px 22px 9px rgba(120,14,33,0.71);
+	-webkit-box-shadow: -1px 1px 22px 9px rgba(120,14,33,0.71);
+	-moz-box-shadow: -1px 1px 22px 9px rgba(120,14,33,0.71);
+	transition: 1s;
+}
+
+.shadow_text:hover{
+	text-shadow: 0px 0.2rem 1px rgba(205, 205, 205, 0.8);
+	transform: scale(1.03 , 1.03);
+	transition: 2s;
+}
+
+/* cierro efectos */
+
 @media (min-width: 768px){
 	.grid_body-index{
 		display: grid;
