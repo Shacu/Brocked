@@ -2,11 +2,17 @@
 @import "_mixins";
 @import "_maps";
 
-
 body{
 	background-color: $black;
 	width: map-get($map:$width, $key: 'cuatro');
 	height: map-get($map:$height, $key: 'cuatro');
+}
+
+.index{
+	.ani_pulso{
+		transform: scale(1);
+    	animation: pulse 5s linear infinite;
+	}
 	article{
 		h1{
 			@include texto(1.5rem,center,white);
@@ -19,6 +25,39 @@ body{
 	}
 }
 
+.ani_pulso::after {
+    position:absolute;
+    /* top: -100px;*/
+    /* Inherit properties of parent */
+    /* left: -100px; */
+    left:0;
+    height: 100px;
+    width:100px;
+}
+.ani_pulso::before {
+    content:'';
+    position:absolute;
+    top:0; 
+    height: 100px;
+    width:100px;
+}
+  
+@keyframes pulse{
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    10% {
+        transform: scale(1.3);
+    }
+    20% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 
 
 
@@ -38,11 +77,6 @@ body{
 	list-style: none;
 }
 
-body{
-	background-color: black;
-	width: 100vw;
-	height: 100vh;
-}
 
 /* estilos links */
 

@@ -3,17 +3,56 @@ body {
   width: 100vw;
   height: 100vh;
 }
-body article h1 {
+
+.index .ani_pulso {
+  transform: scale(1);
+  animation: pulse 5s linear infinite;
+}
+.index article h1 {
   font-size: 1.5rem;
   text-align: center;
   color: white;
 }
-body article h1:hover {
+.index article h1:hover {
   text-shadow: 0px 0.2rem 1px rgba(205, 205, 205, 0.8);
   transform: scale(1.03, 1.03);
   transition: 2s;
 }
 
+.ani_pulso::after {
+  position: absolute;
+  /* top: -100px;*/
+  /* Inherit properties of parent */
+  /* left: -100px; */
+  left: 0;
+  height: 100px;
+  width: 100px;
+}
+
+.ani_pulso::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  10% {
+    transform: scale(1.3);
+  }
+  20% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 @font-face {
   font-family: BasementGrotesque;
   src: url(../font/BasementGrotesque-Black_v1.202.otf);
@@ -26,12 +65,6 @@ body article h1:hover {
   font-family: BasementGrotesque;
   font-size: 1rem;
   list-style: none;
-}
-
-body {
-  background-color: black;
-  width: 100vw;
-  height: 100vh;
 }
 
 /* estilos links */
