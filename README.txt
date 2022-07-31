@@ -1,0 +1,2 @@
+Esta pagina es una tienda de ropa inspirada en la moda actual que se esta viendo, en teoria en algun punto este proyecto sera real y lo concretaremon con algunos amigos y por eso les pedi que hicieran de "clientes" y me ayudaran con el estilo de la misma (tambiene esta inspirada en otras paginas del mismo estilo).
+Para la realizacion de la misma se utiliza Html5, Css, Sass, Bootstrap, Git, Github, Argentum Sans Font Family, Adobe color.
