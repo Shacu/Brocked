@@ -127,6 +127,22 @@ body {
   color: #8C1F1F;
 }
 
+.color_h1-contacto {
+  color: #8C1F1F;
+}
+
+.texto_parrafo-contactanos {
+  color: white;
+}
+
+.color_cuadro-contacto {
+  color: #591616;
+}
+
+.color_cuadro-contacto-2 {
+  color: #401616;
+}
+
 /* cierro colores */
 /* abro edicion de sizes */
 .nav_img-size {
